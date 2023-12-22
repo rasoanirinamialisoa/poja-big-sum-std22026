@@ -25,7 +25,7 @@ jobs:
       - uses: hei-school/aws-credentials-setter@v1.0.3
         with:
           secrets: ${{ toJSON(secrets) }}
-          region: ${{ env.AWS_REGION }}
+          region: eu-west-3
 
       - run: chmod +x gradlew
 
